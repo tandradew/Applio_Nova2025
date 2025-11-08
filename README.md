@@ -1,5 +1,9 @@
 ## Getting Started (tested for MacOS 15.5)
 
+This repository is a fork of the public version of applio. There are several installation 
+options, including the app Dione. I've only managed to install Applio manually on Mac as
+follows (probably the same works on Linux). For Windows, refer to the original repo. 
+
 ### 1. Installation
 
 Clone this repository with 
@@ -27,7 +31,13 @@ $ chmod +x run-install.sh
 $ ./run-install.sh
 ```
 
-The first time, you need to make the running script usable by 
+You can now deactivate your conda environment, since you will no longer need it
+
+```
+conda deactivate 
+```
+
+The first time you use applio, you need to make the running script usable by 
 
 ```
 $ chmod +x run-applio.sh
