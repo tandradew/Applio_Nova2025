@@ -55,3 +55,11 @@ $ ./run-applio.sh
 
 This launches the Gradio interface in your default browser.
 
+The first line is important to avoid calling the gpu which is not
+allowed in MacOS, at least for this implementation of Applio. 
+
+### 3. Adding RVC models 
+
+To add RVC voice models, just drag and drop the `.pth` and `.index` files using 
+Applio's. You can train them yourself or download them from e.g. 
+https://voice-models.com
