@@ -31,6 +31,9 @@ $ chmod +x run-install.sh
 $ ./run-install.sh
 ```
 
+This installation can take a couple of minutes. At the end you should see a successs message, 
+and find the directory `.venv/` inside your project folder. This is where your virtual environment will be located. 
+
 You can now deactivate your conda environment, since you will no longer need it
 
 ```
@@ -53,9 +56,16 @@ $ export PYTORCH_ENABLE_MPS_FALLBACK=1
 $ ./run-applio.sh
 ```
 
-This launches the Gradio interface in your default browser.
+This launches the Gradio interface in your default browser, and in particular, 
+activates the virtual environment needded (so no, you don't have to activate it manually). 
 
-The first line is important to avoid calling the gpu which is not
+The line above
+
+```
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+```
+
+is important to avoid calling the gpu which is not
 allowed in MacOS, at least for this implementation of Applio. 
 
 ### 3. Adding RVC models 
