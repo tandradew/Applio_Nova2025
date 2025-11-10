@@ -61,5 +61,15 @@ allowed in MacOS, at least for this implementation of Applio.
 ### 3. Adding RVC models 
 
 To add RVC voice models, just drag and drop the `.pth` and `.index` files using 
-Applio's. You can train them yourself or download them from e.g. 
-https://voice-models.com
+Applio's. The `.index` files can be quite large, and they are not stricktly necessary
+for the functioning of the algorithm, although they usually improve output quality. For the experiments we will do here, you can skip them if you prefer. 
+
+You can download a trained (and properly licensed!) model from 
+
+https://huggingface.co/Nekochu/RVC-VCTK_Voice-sample
+
+Navigate inside that URL and select a specific model, e.g.
+
+https://huggingface.co/Nekochu/RVC-VCTK_Voice-sample/tree/main/F/All_F
+
+Download the `.pth` and optional `.index` file from there. 
